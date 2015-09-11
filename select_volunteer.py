@@ -9,15 +9,17 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 import random
-import time
+import time,sys
 
 def main():
     qa_team = ['Bogdan','David','Deepika','Natalia','Sharlin','Xiaoqing']
-    for i in range(random.randint(20,40)):
+    for i in range(random.randint(30,50)):
         volunteer = random.choice(qa_team)
         print volunteer,
-        print "\b" * (len(volunteer)+1),
+        sys.stdout.flush()
         time.sleep(.3)
+        print "\b" * (len(volunteer)+1),
+        
     print "%s!" % volunteer
 
 if __name__ == '__main__':
