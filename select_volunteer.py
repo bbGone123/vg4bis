@@ -12,7 +12,7 @@ import random
 import time,sys
 
 def main():
-    qa_team = ['Bogdan','Deepika','Kevin','Kimtan','Kirill','Megha','Natalia','Sharlin','Xiaoqing']
+    qa_team = ['Bogdan','Deepika','Kevin','Kimtan','Megha','Sharlin','Svitlana','Xiaoqing']
     for i in range(random.randint(30,50)):
         volunteer = random.choice(qa_team)
         print volunteer,
