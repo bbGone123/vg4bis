@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+
+body {background-color:#ffe;}
+th {background-color: lightblue;}
+table {background-color: aqua;}
+td {text-align:center;}
+</style>
+
+</head>
+
+<body>
+
+<table border="1" 
+       summary="This table charts the number of cups
+                of coffee consumed by each senator, the type 
+                of coffee (decaf or regular), and whether 
+                taken with sugar.">
+<CAPTION>Cups of coffee consumed by each senator per day</CAPTION>
+<tr>
+   <th>Name</th>
+   <th>Cups per day</th>
+   <th>Type of Coffee</th>
+   <th>Sugar?</th>
+</tr>
+<tr>
+   <td>Todd Sexton</td>
+   <td>10</td>
+   <td>Espresso</td>
+   <td>No</td>
+</tr>   
+<tr>
+   <td>Justin Dinnen</td>
+   <td>5</td>
+   <td>Decaf</td>
+   <td>Yes</td>
+</tr>   
+<tr>
+   <td>John Fuller</td>
+   <td>2</td>
+   <td>Zorro</td>
+   <td>No</td>
+</tr>
+<tr>
+   <td>Martin Black</td>
+   <td>4</td>
+   <td>Americano</td>
+   <td>Yes</td>
+</tr>
+<tr>
+   <td>Patricia M. Rates</td>
+   <td>15</td>
+   <td>Guillermo</td>
+   <td>Yes</td>         
+</tr>
+<tr>
+   <td>Joe Anderssen</td>
+   <td>7</td>
+   <td>Espresso</td>
+   <td>Yes</td>   
+</tr>    
+</table>
+
+
+<ul>
+<li> total numer of senators: count(//tr)-1</li>
+<li> total cups per day: sum(//tr/td[2])</li>
+<li> wich coffee Martin Black prefers: //td[(text()="Martin Black")]/following-sibling::td[2]/text() </li>
+<li> how many senators drink espresso: count(//td[contains(text(),"Espresso")])  </li>
+<li> which senators drink coffee without sugar: //td[(text()="No")]/preceding-sibling::td[3]/text() </li>
+</ul>
+
+</body>
+</html>
