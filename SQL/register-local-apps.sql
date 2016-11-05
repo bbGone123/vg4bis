@@ -1,0 +1,3 @@
+INSERT INTO `frontend`.`ui_application` (`name`, `app_url`, `app_domain`, `logo_url`, `created`) VALUES ('Apache', 'https://qac--apps1-bgtestapps-com.%(cust_proxy_host)s/', 'bgcorp.com', '/static/img/apache_logo.png', '2013-07-12 18:21:52');
+INSERT INTO `frontend`.`ui_application` (`name`, `app_url`, `app_domain`, `logo_url`, `created`) VALUES ('Opencart', 'https://qac--apps1-bgtestapps-com.%(cust_proxy_host)s/store', 'bgcorp.com', '/static/img/opencart_logo.png', '2013-07-12 18:21:52')
+INSERT INTO `frontend`.`ui_application` (`name`, `app_url`, `app_domain`, `logo_url`, `created`) VALUES ('Wordpress', 'https://qac--apps1-bgtestapps-com.%(cust_proxy_host)s/wp', 'bgcorp.com', '/static/img/wp_logo.png', '2013-07-12 18:21:52');
